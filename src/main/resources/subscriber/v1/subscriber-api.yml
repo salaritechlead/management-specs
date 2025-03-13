@@ -10,7 +10,7 @@ info:
    version: v1
 paths:
    /management/subscribers/{id}:
-      $ref: './endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id'
+      $ref: "endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id"
    #/management/subscribers/create:
    #   $ref: 'endpoint-post-subscriber-creation.yml#/endpoint-post-subscriber-creation'
       #/management/subscribers/activate/{id}:
