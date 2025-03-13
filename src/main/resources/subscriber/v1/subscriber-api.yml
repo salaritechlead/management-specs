@@ -10,36 +10,36 @@ info:
    version: v1
 paths:
    /management/subscribers/{id}:
-      $ref: 'endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id'
-   /management/subscribers/create:
-      $ref: 'endpoint-post-subscriber-creation.yml#/endpoint-post-subscriber-creation'
-   /management/subscribers/activate/{id}:
-      $ref: 'endpoint-patch-subscriber-activation-by-id.yml#/endpoint-patch-subscriber-activation-by-id'
-   /management/subscribers/deactivate/{id}:
-      $ref: 'endpoint-patch-subscriber-deactivation-by-id.yml#/endpoint-patch-subscriber-deactivation-by-id'
-   /management/subscribers/branch/{id}:
-      $ref: 'endpoint-get-branch-by-id.yml#/endpoint-get-branch-by-id'
-   /management/subscribers/branch/create:
-      $ref: 'endpoint-post-branch-creation.yml#/endpoint-post-branch-creation'
-   /management/subscribers/branch/update/{id}:
-      $ref: 'endpoint-put-branch-update-by-id.yml#/endpoint-put-branch-update-by-id'
-   /management/subscribers/branch/delete/{id}:
-      $ref: 'endpoint-delete-branch-delete-by-id.yml#/endpoint-delete-branch-delete-by-id'
-   /management/subscribers/country/{id}:
-      $ref: 'endpoint-get-country-by-id.yml#/endpoint-get-country-by-id'
-   /management/subscribers/country/create:
-      $ref: 'endpoint-post-country-creation.yml#/endpoint-post-country-creation'
-   /management/subscribers/country/update/{id}:
-      $ref: 'endpoint-put-country-update-by-id.yml#/endpoint-put-country-update-by-id'
-   /management/subscribers/country/delete/{id}:
-      $ref: 'endpoint-delete-country-delete-by-id.yml#/endpoint-delete-country-delete-by-id'
-   /management/subscribers/locality/{id}:
-      $ref: 'endpoint-get-locality-by-id.yml#/endpoint-get-locality-by-id'
-   /management/subscribers/locality/by-country/{id}:
-      $ref: 'endpoint-get-localities-by-country-id.yml#/endpoint-get-localities-by-country-id'
-   /management/subscribers/locality/create:
-      $ref: 'endpoint-post-locality-creation.yml#/endpoint-post-locality-creation'
-   /management/subscribers/locality/update/{id}:
-      $ref: 'endpoint-put-locality-update-by-id.yml#/endpoint-put-locality-update-by-id'
-   /management/subscribers/locality/delete/{id}:
-      $ref: 'endpoint-delete-locality-delete-by-id.yml#/endpoint-delete-locality-delete-by-id'
+   ? $ref: 'endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id'
+   #/management/subscribers/create:
+   #   $ref: 'endpoint-post-subscriber-creation.yml#/endpoint-post-subscriber-creation'
+      #/management/subscribers/activate/{id}:
+   #   $ref: 'endpoint-patch-subscriber-activation-by-id.yml#/endpoint-patch-subscriber-activation-by-id'
+      #/management/subscribers/deactivate/{id}:
+   #   $ref: 'endpoint-patch-subscriber-deactivation-by-id.yml#/endpoint-patch-subscriber-deactivation-by-id'
+      #/management/subscribers/branch/{id}:
+   #   $ref: 'endpoint-get-branch-by-id.yml#/endpoint-get-branch-by-id'
+      #/management/subscribers/branch/create:
+   #   $ref: 'endpoint-post-branch-creation.yml#/endpoint-post-branch-creation'
+      #/management/subscribers/branch/update/{id}:
+   #   $ref: 'endpoint-put-branch-update-by-id.yml#/endpoint-put-branch-update-by-id'
+      #/management/subscribers/branch/delete/{id}:
+   #   $ref: 'endpoint-delete-branch-delete-by-id.yml#/endpoint-delete-branch-delete-by-id'
+      #/management/subscribers/country/{id}:
+   #   $ref: 'endpoint-get-country-by-id.yml#/endpoint-get-country-by-id'
+      #/management/subscribers/country/create:
+   #   $ref: 'endpoint-post-country-creation.yml#/endpoint-post-country-creation'
+      #/management/subscribers/country/update/{id}:
+   #   $ref: 'endpoint-put-country-update-by-id.yml#/endpoint-put-country-update-by-id'
+      #/management/subscribers/country/delete/{id}:
+   #   $ref: 'endpoint-delete-country-delete-by-id.yml#/endpoint-delete-country-delete-by-id'
+      #/management/subscribers/locality/{id}:
+   #   $ref: 'endpoint-get-locality-by-id.yml#/endpoint-get-locality-by-id'
+      #/management/subscribers/locality/by-country/{id}:
+   #   $ref: 'endpoint-get-localities-by-country-id.yml#/endpoint-get-localities-by-country-id'
+      #/management/subscribers/locality/create:
+   #   $ref: 'endpoint-post-locality-creation.yml#/endpoint-post-locality-creation'
+      #/management/subscribers/locality/update/{id}:
+   #   $ref: 'endpoint-put-locality-update-by-id.yml#/endpoint-put-locality-update-by-id'
+      #/management/subscribers/locality/delete/{id}:
+   #   $ref: 'endpoint-delete-locality-delete-by-id.yml#/endpoint-delete-locality-delete-by-id'
