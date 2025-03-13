@@ -1,0 +1,43 @@
+endpoint-get-localities-by-country-id:
+   get:
+      summary: Get localities
+      parameters:
+         - name: countryId
+           in: path
+           required: true
+           schema:
+              type: integer
+              format: int64
+      responses:
+         200:
+            description: Successful operation
+            content:
+               application/json;version=v1:
+                  schema:
+                     type: array
+                     items:
+                        $ref: 'subscriber-responses.yml#/components/schemas/LocalityResponse'
+         401:
+            description: Unauthorized
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         403:
+            description: Forbidden
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         406:
+            description: Not Acceptable
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         500:
+            description: Internal Error
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'

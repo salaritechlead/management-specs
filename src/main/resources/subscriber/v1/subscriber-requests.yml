@@ -1,0 +1,225 @@
+components:
+  schemas:
+    SubscriberCreationRequest:
+      type: object
+      properties:
+        lastName:
+          type: string
+        firstName:
+          type: string
+        label:
+          type: string
+        branchId:
+          type: integer
+          format: int64
+        countryId:
+          type: integer
+          format: int64
+        localityId:
+          type: integer
+          format: int64
+        phoneNumber:
+          type: string
+        emailAddress:
+          type: string
+          format: email
+    SubscriberUpdatePersonalRequest:
+      type: object
+      properties:
+        lastName:
+          type: string
+        firstName:
+          type: string
+        label:
+          type: string
+        socialRegistrationNumber:
+          type: string
+        taxPayerNumber:
+          type: string
+        version:
+          type: integer
+          format: int32
+    SubscriberUpdateFinancialRequest:
+      type: object
+      properties:
+        bankId:
+          type: integer
+          format: int64
+        bankAgencyCode:
+          type: string
+        bankAccountNumber:
+          type: string
+        bankAccountKey:
+          type: string
+        codeSwift:
+          type: string
+        ibanCountryCode:
+          type: string
+        ibanControlKey:
+          type: string
+        version:
+          type: integer
+          format: int32
+    SubscriberUpdateAddressRequest:
+      type: object
+      properties:
+        branchId:
+          type: integer
+          format: int64
+        countryId:
+          type: integer
+          format: int64
+        localityId:
+          type: integer
+          format: int64
+        phoneNumber:
+          type: string
+        version:
+          type: integer
+          format: int32
+    SubscriberActivationRequest:
+      type: object
+      properties:
+        reason:
+          type: string
+        detail:
+          type: string
+        version:
+          type: integer
+          format: int32
+    SubscriberDeactivationRequest:
+      type: object
+      properties:
+        reason:
+          type: string
+        detail:
+          type: string
+        version:
+          type: integer
+          format: int32
+    BranchCreationRequest:
+      type: object
+      properties:
+        label:
+          type: string
+        description:
+          type: string
+    BranchUpdateRequest:
+      type: object
+      properties:
+        label:
+          type: string
+        description:
+          type: string
+    CountryCreationRequest:
+      type: object
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+        phoneCode:
+          type: integer
+          format: int32
+        ageOfMajority:
+          type: integer
+          format: int32
+        minimumSalary:
+          type: number
+          format: decimal
+        currency:
+          type: string
+        timeZone:
+          type: string
+        codeISO3166:
+          type: string
+        digitsCode:
+          type: string
+        phoneNumberFormat:
+          type: string
+        phoneNumberExample:
+          type: string
+        socialSecurityNumberFormat:
+          type: string
+        socialSecurityNumberExample:
+          type: string
+        subscriberSocialRegistrationNumberFormat:
+          type: string
+        subscriberSocialRegistrationNumberExample:
+          type: string
+    CountryUpdateRequest:
+      type: object
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+        phoneCode:
+          type: integer
+          format: int32
+        ageOfMajority:
+          type: integer
+          format: int32
+        minimumSalary:
+          type: number
+          format: decimal
+        currency:
+          type: string
+        timeZone:
+          type: string
+        codeISO3166:
+          type: string
+        digitsCode:
+          type: string
+        phoneNumberFormat:
+          type: string
+        phoneNumberExample:
+          type: string
+        socialSecurityNumberFormat:
+          type: string
+        socialSecurityNumberExample:
+          type: string
+        subscriberSocialRegistrationNumberFormat:
+          type: string
+        subscriberSocialRegistrationNumberExample:
+          type: string
+    LocalityCreationRequest:
+      type: object
+      properties:
+        label:
+          type: string
+        countryId:
+          type: integer
+          format: int64
+    LocalityUpdateRequest:
+      type: object
+      properties:
+        label:
+          type: string
+        countryId:
+          type: integer
+          format: int64
+    BankCreationRequest:
+      type: object
+      properties:
+        code:
+          type: string
+        codeSwift:
+          type: string
+        label:
+          type: string
+        countryId:
+          type: integer
+          format: int64
+    BankUpdateRequest:
+      type: object
+      properties:
+        code:
+          type: string
+        codeSwift:
+          type: string
+        label:
+          type: string
+        countryId:
+          type: integer
+          format: int64

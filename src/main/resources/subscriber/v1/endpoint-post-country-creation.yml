@@ -1,0 +1,59 @@
+endpoint-post-country-creation:
+   post:
+      summary: Create a country
+      operationId: createCountry
+      requestBody:
+         required: true
+         content:
+            application/json;version=v1:
+               schema:
+                  $ref: "subscriber-responses.yml#/components/schemas/CountryCreationRequest"
+      responses:
+         201:
+            description: Successful operation
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/SubscriberResponse'
+         400:
+            description: Bad Request
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         401:
+            description: Unauthorized
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         403:
+            description: Forbidden
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         404:
+            description: Not Found
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         406:
+            description: Not Acceptable
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         409:
+            description: Conflict
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         500:
+            description: Internal Error
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'

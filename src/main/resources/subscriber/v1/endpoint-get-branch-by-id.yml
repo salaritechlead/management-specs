@@ -1,0 +1,53 @@
+endpoint-get-branch-by-id:
+   get:
+      summary: Get branch by id
+      parameters:
+         - name: id
+           in: path
+           required: true
+           schema:
+              type: integer
+              format: int64
+      responses:
+         200:
+            description: Successful operation
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/BranchResponse'
+         400:
+            description: Bad Request
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         401:
+            description: Unauthorized
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         403:
+            description: Forbidden
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         404:
+            description: Not Found
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         406:
+            description: Not Acceptable
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+         500:
+            description: Internal Error
+            content:
+               application/json;version=v1:
+                  schema:
+                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
