@@ -9,45 +9,45 @@ endpoint-get-subscriber-by-id:
               type: integer
               format: int64
       responses:
-         200:
+         "200":
             description: Successful operation
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/SubscriberResponse'
-         400:
+                     $ref: "subscriber-responses.yml#/components/schemas/SubscriberResponse"
+         "400":
             description: Bad Request
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
-         401:
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
+         "401":
             description: Unauthorized
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
-         403:
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
+         "403":
             description: Forbidden
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
-         404:
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
+         "404":
             description: Not Found
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
-         406:
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
+         "406":
             description: Not Acceptable
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
-         500:
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
+         "500":
             description: Internal Error
             content:
                application/json;version=v1:
                   schema:
-                     $ref: 'subscriber-responses.yml#/components/schemas/ProblemDetail'
+                     $ref: "subscriber-responses.yml#/components/schemas/ProblemDetail"
