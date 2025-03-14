@@ -10,5 +10,5 @@ info:
     name: Deep Dreams Copyright
   version: 1.0
 paths:
-  ? /management/subscribers/{id}:
+  /management/subscribers/{id}:
     $ref: "endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id"
