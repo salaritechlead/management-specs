@@ -10,16 +10,4 @@ info:
   version: v1
 paths:
   /management/subscribers/{id}:
-    delete:
-      summary: Delete a branch
-      operationId: deleteBranchById
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: integer
-            format: int64
-      responses:
-        200:
-          description: Successful operation
+    $ref: "endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id"
