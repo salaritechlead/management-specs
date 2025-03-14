@@ -8,7 +8,9 @@ info:
     email: salari@deepdreams.tech
   license:
     name: Deep Dreams Copyright
-  version: 1.0
+  version: v1
 paths:
   /management/subscribers/{id}:
     $ref: "endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id"
+  /management/subscribers/create:
+    $ref: "endpoint-post-subscriber-creation.yml#/endpoint-post-subscriber-creation"

@@ -7,7 +7,7 @@ endpoint-post-subscriber-creation:
          content:
             application/json;version=v1:
                schema:
-                  $ref: "subscriber-responses.yml#/components/schemas/SubscriberCreationRequest"
+                  $ref: "subscriber-requests.yml#/components/schemas/SubscriberCreationRequest"
       responses:
          201:
             description: Successful operation
