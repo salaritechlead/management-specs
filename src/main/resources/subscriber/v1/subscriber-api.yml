@@ -1,13 +1,14 @@
-openapi: 3.0.0
+openapi: 3.0.3
 info:
   title: Management Subscriber API
   description: Management Subscriber API specification
   termsOfService: https://deepdreams.tech/terms-of-service
   contact:
+    name: Management Subscriber Team
     email: salari@deepdreams.tech
   license:
     name: Deep Dreams Copyright
-  version: v1
+  version: 1.0
 paths:
   ? /management/subscribers/{id}:
     $ref: "endpoint-get-subscriber-by-id.yml#/endpoint-get-subscriber-by-id"
