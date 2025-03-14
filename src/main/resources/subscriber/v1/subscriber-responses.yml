@@ -27,13 +27,13 @@ components:
         lastUpdatedBy:
           type: string
         branch:
-          $ref: '#/components/schemas/BranchResponse'
+          $ref: "#/components/schemas/BranchResponse"
         country:
-          $ref: '#/components/schemas/CountryResponse'
+          $ref: "#/components/schemas/CountryResponse"
         locality:
-          $ref: '#/components/schemas/LocalityResponse'
+          $ref: "#/components/schemas/LocalityResponse"
         bank:
-          $ref: '#/components/schemas/BankResponse'
+          $ref: "#/components/schemas/BankResponse"
         bankAgencyCode:
           type: string
         bankAccountNumber:
@@ -67,7 +67,7 @@ components:
         eventDate:
           type: string
           format: date-time
-        type:
+        reason:
           type: string
         description:
           type: string
@@ -129,7 +129,7 @@ components:
         label:
           type: string
         country:
-          $ref: '#/components/schemas/CountryResponse'
+          $ref: "#/components/schemas/CountryResponse"
     BankResponse:
       type: object
       properties:
@@ -143,7 +143,7 @@ components:
         label:
           type: string
         country:
-          $ref: '#/components/schemas/CountryResponse'
+          $ref: "#/components/schemas/CountryResponse"
     ProblemDetail:
       type: object
       properties:
@@ -160,7 +160,7 @@ components:
       type: object
       properties:
         country:
-          $ref: '#/components/schemas/Country'
+          $ref: "#/components/schemas/CountryResponse"
         number:
           type: integer
           format: int64
